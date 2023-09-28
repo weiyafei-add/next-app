@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+  height: 50px;
+  justify-content: space-between;
+}
+
+.imgs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.img {
+  opacity: 0.6;
+  cursor: pointer;
+}
