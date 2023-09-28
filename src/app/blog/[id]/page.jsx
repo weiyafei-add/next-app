@@ -1,8 +1,21 @@
 import React from "react";
 import styles from "./page.module.css";
 import Image from "next/image";
+import { notFound } from "next/navigation";
 
-const PostBlog = ({ params }) => {
+async function getData(id) {
+  const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, { cache: "no-store" });
+
+  if (!res.ok) {
+    throw notFound();
+  }
+
+  return res.json();
+}
+
+const PostBlog = async ({ params }) => {
+  const data = await getData(params.id);
+  console.log(data);
   return (
     <div className={styles.container}>
       <div className={styles.top}>
