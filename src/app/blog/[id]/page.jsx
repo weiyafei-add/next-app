@@ -15,13 +15,12 @@ async function getData(id) {
 
 const PostBlog = async ({ params }) => {
   const data = await getData(params.id);
-  console.log(data);
   return (
     <div className={styles.container}>
       <div className={styles.top}>
         <div className={styles.info}>
-          <h1 className={styles.title}>{"data.title"}</h1>
-          <p className={styles.desc}>data.d</p>
+          <h1 className={styles.title}>{data.title}</h1>
+          <p className={styles.desc}>{data.body}</p>
           <div className={styles.author}>
             <Image
               src={"https://images.pexels.com/photos/2103127/pexels-photo-2103127.jpeg"}

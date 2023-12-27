@@ -12,10 +12,13 @@
     "@yf-web-tools/math": "^1.0.0",
     "eslint": "8.50.0",
     "eslint-config-next": "13.5.2",
+    "mongoose": "6.12.3",
     "next": "13.5.2",
+    "next-auth": "^4.24.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "sharp": "^0.32.6"
+    "sharp": "^0.32.6",
+    "swr": "^2.2.4"
   },
   "devDependencies": {
     "@types/node": "20.7.1",
